@@ -1,17 +1,32 @@
 import { useState } from "react";
 
 const Gallery = () => {
-  // Placeholder images - replace with actual tattoo work photos
+  // Fotos dos trabalhos de tatuagem
   const galleryImages = [
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg"
+    {
+      url: "/lovable-uploads/bc071202-5555-4fa8-a0f4-f48a732d87e3.png",
+      alt: "Tatuagem realista de cachorro Shih Tzu com nome Bolinha"
+    },
+    {
+      url: "/lovable-uploads/55176850-3670-4596-a8e5-6e599b93ccd7.png", 
+      alt: "Tatuagem oriental com templo japonês e flores de cerejeira"
+    },
+    {
+      url: "/lovable-uploads/10b87435-9feb-4474-8a62-9149e91f6004.png",
+      alt: "Tatuagem realista feminina com cartas de baralho e elementos decorativos"
+    },
+    {
+      url: "/lovable-uploads/ece86ca1-1d24-46a8-81ec-212f64a59ce6.png",
+      alt: "Tatuagem realista de elefante em braço completo"
+    },
+    {
+      url: "/lovable-uploads/3c2377ea-91a4-4263-ba52-1ff9db3fb1ae.png",
+      alt: "Tatuagem cartoon dos personagens Looney Tunes na perna"
+    },
+    {
+      url: "/lovable-uploads/ab26a98a-8493-4e2f-bfd9-479f30c673f2.png",
+      alt: "Tatuagem religiosa de Jesus Cristo com coroa"
+    }
   ];
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -29,16 +44,16 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mb-12">
           {galleryImages.map((image, index) => (
             <div
               key={index}
               className="gallery-hover cursor-pointer group relative overflow-hidden rounded-lg aspect-square"
-              onClick={() => setSelectedImage(image)}
+              onClick={() => setSelectedImage(image.url)}
             >
               <img
-                src={image}
-                alt={`Trabalho de tatuagem ${index + 1}`}
+                src={image.url}
+                alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

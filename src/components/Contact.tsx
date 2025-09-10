@@ -3,18 +3,18 @@ import { Button } from "@/components/ui/button";
 const Contact = () => {
   return (
     <section id="contato" className="py-20 bg-tattoo-dark-gray">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 lg:mb-6 text-white">
             Entre em <span className="text-gold">Contato</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto">
             Pronto para transformar sua ideia em arte? Vamos conversar sobre seu projeto!
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-white mb-8">Informações de Contato</h3>
