@@ -4,27 +4,27 @@ const Gallery = () => {
   // Fotos dos trabalhos de tatuagem
   const galleryImages = [
     {
-      url: "/lovable-uploads/bc071202-5555-4fa8-a0f4-f48a732d87e3.png",
+      url: "./lovable-uploads/bc071202-5555-4fa8-a0f4-f48a732d87e3.png",
       alt: "Tatuagem realista de cachorro Shih Tzu com nome Bolinha"
     },
     {
-      url: "/lovable-uploads/55176850-3670-4596-a8e5-6e599b93ccd7.png", 
+      url: "./lovable-uploads/55176850-3670-4596-a8e5-6e599b93ccd7.png", 
       alt: "Tatuagem oriental com templo japonês e flores de cerejeira"
     },
     {
-      url: "/lovable-uploads/10b87435-9feb-4474-8a62-9149e91f6004.png",
+      url: "./lovable-uploads/10b87435-9feb-4474-8a62-9149e91f6004.png",
       alt: "Tatuagem realista feminina com cartas de baralho e elementos decorativos"
     },
     {
-      url: "/lovable-uploads/ece86ca1-1d24-46a8-81ec-212f64a59ce6.png",
+      url: "./lovable-uploads/ece86ca1-1d24-46a8-81ec-212f64a59ce6.png",
       alt: "Tatuagem realista de elefante em braço completo"
     },
     {
-      url: "/lovable-uploads/3c2377ea-91a4-4263-ba52-1ff9db3fb1ae.png",
+      url: "./lovable-uploads/3c2377ea-91a4-4263-ba52-1ff9db3fb1ae.png",
       alt: "Tatuagem cartoon dos personagens Looney Tunes na perna"
     },
     {
-      url: "/lovable-uploads/ab26a98a-8493-4e2f-bfd9-479f30c673f2.png",
+      url: "./lovable-uploads/ab26a98a-8493-4e2f-bfd9-479f30c673f2.png",
       alt: "Tatuagem religiosa de Jesus Cristo com coroa"
     }
   ];
