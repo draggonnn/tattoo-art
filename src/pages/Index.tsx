@@ -7,8 +7,14 @@ import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
+  console.log("Index component loading...");
+  
   return (
     <div className="min-h-screen bg-black">
+      {/* Teste de estilo para diagnosticar */}
+      <div className="text-tattoo-gold p-4">
+        Teste de cor dourada
+      </div>
       <Header />
       <Hero />
       <Gallery />
