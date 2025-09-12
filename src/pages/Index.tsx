@@ -11,10 +11,6 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-black">
-      {/* Teste de estilo para diagnosticar */}
-      <div className="text-tattoo-gold p-4">
-        Teste de cor dourada
-      </div>
       <Header />
       <Hero />
       <Gallery />
