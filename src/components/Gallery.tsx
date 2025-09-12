@@ -26,6 +26,46 @@ const Gallery = () => {
     {
       url: "./lovable-uploads/ab26a98a-8493-4e2f-bfd9-479f30c673f2.png",
       alt: "Tatuagem religiosa de Jesus Cristo com coroa"
+    },
+    {
+      url: "./lovable-uploads/photo_1_2025-09-12_16-09-44.jpg",
+      alt: "Tatuagem delicada de rosa com folhas na coxa"
+    },
+    {
+      url: "./lovable-uploads/photo_2_2025-09-12_16-09-44.jpg",
+      alt: "Tatuagem feminina nas costas com rosas e frase inspiracional"
+    },
+    {
+      url: "./lovable-uploads/photo_3_2025-09-12_16-09-44.jpg",
+      alt: "Tatuagem realista de coruja com relógio no antebraço"
+    },
+    {
+      url: "./lovable-uploads/photo_5_2025-09-12_16-09-44.jpg",
+      alt: "Tatuagem chicana com rosto feminino e cartas na perna"
+    },
+    {
+      url: "./lovable-uploads/photo_6_2025-09-12_16-09-44.jpg",
+      alt: "Tatuagem realista de elefante africano com paisagem no braço"
+    },
+    {
+      url: "./lovable-uploads/photo_7_2025-09-12_16-09-44.jpg",
+      alt: "Tatuagem religiosa de Jesus Cristo em prece no braço"
+    },
+    {
+      url: "./lovable-uploads/photo_8_2025-09-12_16-09-44.jpg",
+      alt: "Tatuagem musical com retrato e notas musicais na perna"
+    },
+    {
+      url: "./lovable-uploads/photo_9_2025-09-12_16-09-44.jpg",
+      alt: "Tatuagem oriental japonesa com templo e flores de cerejeira na perna"
+    },
+    {
+      url: "./lovable-uploads/photo_10_2025-09-12_16-09-44.jpg",
+      alt: "Tatuagem religiosa realista de Jesus Cristo com pomba no braço"
+    },
+    {
+      url: "./lovable-uploads/photo_11_2025-09-12_16-09-44.jpg",
+      alt: "Tatuagem cartoon dos Looney Tunes Acme na perna"
     }
   ];
 
