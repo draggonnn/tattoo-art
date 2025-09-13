@@ -69,7 +69,36 @@ const Gallery = () => {
     }
   ];
 
+  // Vídeos dos resultados de tatuagens
+  const galleryVideos = [
+    {
+      url: "./videos/tattoo-result-1.mp4",
+      alt: "Resultado de tatuagem realizada - Vídeo 1"
+    },
+    {
+      url: "./videos/tattoo-result-2.mp4", 
+      alt: "Resultado de tatuagem realizada - Vídeo 2"
+    },
+    {
+      url: "./videos/tattoo-result-3.mp4",
+      alt: "Resultado de tatuagem realizada - Vídeo 3"
+    },
+    {
+      url: "./videos/tattoo-result-4.mp4",
+      alt: "Resultado de tatuagem realizada - Vídeo 4"
+    },
+    {
+      url: "./videos/tattoo-result-5.mp4",
+      alt: "Resultado de tatuagem realizada - Vídeo 5"
+    },
+    {
+      url: "./videos/tattoo-result-6.mp4",
+      alt: "Resultado de tatuagem realizada - Vídeo 6"
+    }
+  ];
+
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
   return (
     <section id="galeria" className="py-20 bg-tattoo-dark-gray">
@@ -83,8 +112,12 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mb-12">
+        {/* Photos Gallery */}
+        <div className="mb-16">
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-white">
+            Fotos dos <span className="text-gold">Trabalhos</span>
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
           {galleryImages.map((image, index) => (
             <div
               key={index}
@@ -106,6 +139,38 @@ const Gallery = () => {
               </div>
             </div>
           ))}
+          </div>
+        </div>
+
+        {/* Videos Gallery */}
+        <div className="mb-12">
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-white">
+            Vídeos dos <span className="text-gold">Resultados</span>
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+            {galleryVideos.map((video, index) => (
+              <div
+                key={index}
+                className="gallery-hover cursor-pointer group relative overflow-hidden rounded-lg aspect-square"
+                onClick={() => setSelectedVideo(video.url)}
+              >
+                <video
+                  src={video.url}
+                  className="w-full h-full object-cover"
+                  muted
+                  playsInline
+                />
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="text-white text-center">
+                    <div className="w-12 h-12 border-2 border-gold rounded-full flex items-center justify-center mx-auto mb-2">
+                      <span className="text-gold text-xl">▶</span>
+                    </div>
+                    <p className="text-sm">Ver Vídeo</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Call to Action */}
@@ -137,6 +202,29 @@ const Gallery = () => {
             />
             <button
               onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white text-3xl hover:text-gold transition-colors"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Modal for viewing videos */}
+      {selectedVideo && (
+        <div
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedVideo(null)}
+        >
+          <div className="relative max-w-4xl max-h-full">
+            <video
+              src={selectedVideo}
+              controls
+              autoPlay
+              className="max-w-full max-h-full"
+            />
+            <button
+              onClick={() => setSelectedVideo(null)}
               className="absolute top-4 right-4 text-white text-3xl hover:text-gold transition-colors"
             >
               ×
