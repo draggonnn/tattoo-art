@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6 text-white leading-tight">
             Arte na Pele com{" "}
-            <span className="text-gold">Marcos V Tattoo</span>
+            <span className="text-gold">Marcos Vinicius Tattoo</span>
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 lg:mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">

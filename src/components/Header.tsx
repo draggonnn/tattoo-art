@@ -32,7 +32,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-xl lg:text-2xl font-bold text-gold">
-              Marcos V Tattoo
+              Marcos Vinicius Tattoo
             </h1>
           </div>
 

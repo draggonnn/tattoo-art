@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-gold mb-4">Marcos V Tattoo</h3>
+            <h3 className="text-2xl font-bold text-gold mb-4">Marcos Vinicius Tattoo</h3>
             <p className="text-gray-400 mb-4">
               Arte na pele com dedicação, criatividade e profissionalismo. 
               Cada tatuagem é uma obra única criada especialmente para você.
@@ -85,7 +85,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gold/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} Marcos V Tattoo. Todos os direitos reservados.
+            © {currentYear} Marcos Vinicius Tattoo. Todos os direitos reservados.
           </p>
           <p className="text-gray-400 text-sm">
             Arte na pele com paixão e dedicação ✨
